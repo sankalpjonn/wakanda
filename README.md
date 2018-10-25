@@ -1,6 +1,6 @@
 # Wakanda
 
-A service that produces logs to a kafka cluster on a particular topic when hit on the endpoint `/topics/:topic`
+A service that produces logs to a kafka cluster on a particular topic when hit on the endpoint `/topics/:topic` with a throughput of 5000 requests/sec
 
 ![knowhere](http://66.42.57.109/wakanda.jpg)
 
