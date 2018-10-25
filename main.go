@@ -32,7 +32,6 @@ func startServer(serverAddr string, dispatcher *wrq.Dispatcher, producer *kafka.
 
 func startWakanda(serverhost string, brokerlist string) {
 	dispatcher := wrq.New()
-	dispatcher.Run()
 	defer dispatcher.Stop()
 
 	producer, err := kafka.NewProducer(&kafka.ConfigMap{"bootstrap.servers": brokerlist})
